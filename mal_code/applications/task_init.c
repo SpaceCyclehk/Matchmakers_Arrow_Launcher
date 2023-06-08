@@ -41,6 +41,8 @@ void mal_init_thread_entry(void* parameter)
     tid0 = RT_NULL;
 }
 
+extern int oled_init(void);
+
 int mal_application_init()
 {
     tid0 = rt_thread_create("init",
@@ -52,6 +54,8 @@ int mal_application_init()
 
     if (tid0 != RT_NULL)
         rt_thread_startup(tid0);
+
+    oled_init();
 
     return 0;
 }

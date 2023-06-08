@@ -88,16 +88,13 @@ extern "C"
  */
 
 /*#define BSP_USING_I2C1*/
-#ifdef BSP_USING_I2C1
-#define BSP_I2C1_SCL_PIN    GET_PIN(port, pin)
-#define BSP_I2C1_SDA_PIN    GET_PIN(port, pin)
-#endif
+#define BSP_USING_I2C1
 
 /*#define BSP_USING_I2C2*/
-#ifdef BSP_USING_I2C2
-#define BSP_I2C2_SCL_PIN    GET_PIN(port, pin)
-#define BSP_I2C2_SDA_PIN    GET_PIN(port, pin)
-#endif
+#define  BSP_USING_I2C2
+
+/*#define BSP_USING_I2C3*/
+#define  BSP_USING_I2C3
 
 /*-------------------------- I2C CONFIG END --------------------------*/
 
